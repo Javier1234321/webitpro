@@ -11,10 +11,26 @@ h1{
 }
 .contacto{
     text-align: left;
+    width: 33%;
 }
 .index{
     text-align: center;
+    width: 33%;
 }
 .sobreNosotros{
     text-align: right;
+    width: 33%;
+}
+#sobreNosotros{
+    color:blueviolet;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    border: solid 3px blue;
+    padding: 10px;
+    background-image: "./img/images.jpeg";
+    border-radius: 25%;
+}
+#gatito1{
+    border-radius: 25%;
 }
