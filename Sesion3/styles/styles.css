@@ -1,0 +1,8 @@
+.link-menu{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.link-menu:visited{
+    color: burlywood;
+}
