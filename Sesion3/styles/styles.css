@@ -1,5 +1,27 @@
-h1{
-    color: aqua;
+/**
+Siempre nos enfocamos en hacer muestra pagina
+con la dimension mas pequena
+*/
+
+#title{
+    font-size: 24px;
+    font-family: fantasy;
+}
+#title::before{
+    content: "😸";
+}
+#title::after{
+    content: "🤓";
+}
+#inicio >p::first-letter{
+    font-size: 20px;
+    color: blueviolet;
+}
+#inicio >p::first-line{
+    background: yellow;
+}
+p::selection{
+    background: rgb(183, 183, 240);
 }
 .link-menu{
     color: black;
@@ -21,10 +43,44 @@ h1{
     background: blue;
     border-radius: 25%;
     border: 0ch;
+    font-family: monospace;
+
 }
 #buttom:hover{
     background:  chartreuse;
+    cursor: pointer;
 }
 #buttom:active{
     background: brown;
+}
+#flex{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border: solid 1px blue;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro{
+    height: 30px;
+    width: 30px;
+    background: brown;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact-label{
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    background: white;
+    padding: 0px 5px;
+    font-size: 12px;
+    transition: transform 0.3 ease, color 0.3 ease;
 }
