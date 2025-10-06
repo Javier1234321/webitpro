@@ -1,8 +1,30 @@
+h1{
+    color: aqua;
+}
 .link-menu{
     color: black;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
 }
 .link-menu:visited{
     color: burlywood;
+}
+.link-menu:active{
+    color: crimson;
+}
+.link-menu:hover{
+    color: cadetblue;
+}
+#buttom{
+    color: azure;
+    background: blue;
+    border-radius: 25%;
+    border: 0ch;
+}
+#buttom:hover{
+    background:  chartreuse;
+}
+#buttom:active{
+    background: brown;
 }
