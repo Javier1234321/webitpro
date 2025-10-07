@@ -61,13 +61,6 @@ p::selection{
     justify-content: center;
     align-items: center;
 }
-.cuadro{
-    height: 30px;
-    width: 30px;
-    background: brown;
-    border-radius: 50%;
-    margin: 5px;
-}
 
 #contacto{
     display: flex;
@@ -83,4 +76,19 @@ p::selection{
     padding: 0px 5px;
     font-size: 12px;
     transition: transform 0.3 ease, color 0.3 ease;
+}
+.Container{
+    display: flex;
+}
+.cuadro{
+    height: 30px;
+    width: 30px;
+    background: brown;
+    border-radius: 50%;
+    margin: 5px;
+}
+#dos{
+    position: relative;
+    top: 50px;
+    left: 70px;
 }
