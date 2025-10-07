@@ -24,7 +24,7 @@ p::selection{
     background: rgb(183, 183, 240);
 }
 #head{
-    background: rgb(190, 249, 249);
+    background: rgb(174, 127, 204);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -47,7 +47,7 @@ p::selection{
     color: crimson;
 }
 .link-menu:hover{
-    color: cadetblue;
+    color: white;
 }
 #buttom{
     color: azure;

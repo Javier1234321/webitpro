@@ -13,3 +13,96 @@
     top: 50px;
     left: 70px;
 }
+#caja{
+    width: 50px;
+    height: 50px;
+    background: red;
+    animation: mover 2s infinite;
+}
+#pelota{
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius:50% ;
+    background: linear-gradient(to right, red 50%, black 50%) ;
+    
+}
+#btn-rodar:active ~ div{
+    display: block;
+    animation: rodar 2s infinite;
+}
+/*
+Animacion cabrona
+*/
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+.toggle .circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #c5a412;
+  margin-left: 2px;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+.toggle .circle::after{
+    content: '☀️';
+}
+
+.toggle:focus{
+    background: rgb(54, 54, 54);
+}
+.toggle:focus > .circle{
+    background: rgb(116, 70, 243);
+    animation: rodarLuna 1s forwards;
+}
+.toggle:focus > .circle::after{
+    content: '🌙';
+}
+
+@keyframes rodarLuna {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(30px) rotate(360deg);
+  }
+}
+@keyframes mover{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+        background: linear-gradient(to right,red 50%, blue 50%);
+        border-radius: 50%;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rodar{
+    0%{
+        transform: translateX(0) rotate(0deg);
+    }
+    50%{
+        transform: translateX(150px) rotate(360deg);
+    }
+    100%{
+        transform: translateX(0), rotate(0dg);
+    }
+}
